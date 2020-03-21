@@ -4,8 +4,11 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 
 
 class VkBot:
-    def __init__(self, token):
-        token = token
+    token = ''
+    group_id = ''
+    def __init__(self, token, group_id):
+        self.token = token
+        self.group_id = group_id
 
     _events = ['Вызвать всех']
 
